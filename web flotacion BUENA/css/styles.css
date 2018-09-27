@@ -1,0 +1,102 @@
+/*Empezamos con un reset del margen */
+@import url('https://fonts.googleapis.com/css?family=KoHo:400,600');
+
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'KoHo', sans-serif;
+}
+
+/*ocultar el h1*/
+h1 {
+	display:none;
+}
+
+/*le damos padding para ir centrando los elementos, la anchura al div en pixeles y de esa forma ya se puede centrar con el margin 0 auto*/
+.white{
+	padding:100px 0px;
+	background-color: white;
+	color: grey;
+}
+
+.corse{
+	width: 1004px;
+	margin: 0px auto;
+
+}
+
+/*para flotar los elementos usamos herencia*/
+/*es necesario el width del 50% porque al estar flotendo los elementos hay que dar a cada elemento una medida*/
+.corse div{
+	float: left;
+	width: 40%;
+	margin-right: 5%;
+	margin-left: 5%;
+}
+/*para restaurar el flujo en vez usar un div y usar la class restarurar usamos un seudo selector*/
+.corse:after{
+	clear: both;
+	display: block;
+	height: 0px;
+	content: ""
+}
+
+.blue{
+	padding: 100px 0px;
+	background-color: blue;
+	color: white;
+}
+
+/*para redondear las imagenes*/
+.corse div img{
+	border-radius: 
+}
+
+/* se aplica el dspaly para dotarle al a que es un elemento en linea pero con las propiedade del bloque. De este modo podemos ponerle medidas y relleno*/
+/*la mejor forma de hacer un boton centrado es con el padding nunca con width*/
+.corse a{
+	display: inline-block;
+	padding: 10px 20px 10px;
+	border-radius: 10px;
+	text-decoration: none;
+}	
+/*hacer las imagenes redondas*/
+.corse div img{
+	border-radius: 50%;
+	border:1px solid grey;
+	padding: 10px;
+}
+
+.white div a{
+	background-color: blue;
+	color: white;
+}
+
+.blue div a{
+	background-color: white;
+	color: blue;
+}
+
+.white div a:hover{
+	background-color: grey;
+	color: white;
+	text-decoration: underline;
+}
+
+.blue div a:hover{
+	background-color: grey;
+	color: blue;
+	text-decoration: underline;
+}
+
+h2,p{
+margin-bottom: 30px;
+}
+
+img{
+
+}

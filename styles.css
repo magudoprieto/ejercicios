@@ -1,0 +1,40 @@
+body{
+	background-color: grey;
+}
+
+.ajedrez{
+	width:640px;
+	margin: 0px auto;
+	background-color: white;
+}
+
+
+.ajedrez .linea div{
+	width:80px;
+	height: 80px;
+	
+	float:left;
+}
+
+.ajedrez .linea:after{
+	clear: both;
+	content: "";
+	display: block;
+	height: 0px;
+}
+
+
+
+
+
+.ajedrez .linea:nth-child(odd) div:nth-child(even), 
+.ajedrez .linea:nth-child(even) div:nth-child(odd) {
+	background-color: black;
+
+}
+
+/* CONCLUSION. La clava está en crear filas de 8 cuadros
+y con el nth-child asignarle a los pares e impares el color
+negro sobre un fondo blanco para lograr el efecto ajedrez.
+
+

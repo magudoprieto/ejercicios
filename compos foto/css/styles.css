@@ -1,0 +1,21 @@
+*{
+	box-sizing: border-box;
+}
+
+.contenedor{
+	width: 600px;
+	height: 600px;
+	background-image: url(../images/gato.jpg);
+	margin: 0px auto;
+}
+
+.contenedor .fila{
+	float:left;
+}
+
+.contenedor .fila div{
+	width: 200px;
+	height: 200px;
+	border: 5px solid white;
+}
+

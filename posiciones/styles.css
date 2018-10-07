@@ -1,0 +1,63 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+.wrapper {
+	width: 1170px;
+	background-color: #AAA;
+	height: 600px;
+	padding-left: 150px;
+	padding-right: 150px;
+}
+
+.wrapper hr{
+	width: 6px;
+	height: 600px;
+	background-color: blue;
+	position: absolute;
+	left:43%;
+}
+
+.wrapper .circulo1 , .wrapper .circulo2{
+	width: 20px;
+	height: 20px;
+	background-color: blue;
+	border-radius: 50%;
+	left: 49.17%;
+	position: relative;
+}
+
+.wrapper .circulo1{
+	bottom:3.55%;
+}
+
+.wrapper .circulo2{
+	bottom: 103.4%;
+}
+
+.grupos{
+	width:100%;
+	height: 25%;
+	float:left;
+	margin: 0px auto;
+}
+
+
+
+.grupos div .texto{
+	width: 40%;
+	border: 1px solid blue;
+	border-radius: 10px;
+	text-align: center;
+	float: right;
+	padding: 10px;
+}
+
+.grupos div .fecha{
+	width: 40%;
+	text-align: center;
+	
+}
+

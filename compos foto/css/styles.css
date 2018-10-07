@@ -4,7 +4,6 @@
 
 .contenedor{
 	width: 600px;
-	height: 600px;
 	background-image: url(../images/gato.jpg);
 	margin: 0px auto;
 }
@@ -19,3 +18,9 @@
 	border: 5px solid white;
 }
 
+.contenedor:after{
+	display: block;
+	clear: both;
+	height: 0px;
+	content: "";
+}
